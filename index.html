@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!--COUNTER-->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+         <!--END-->
+         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+         <link rel="stylesheet" href="styles.css">
+
+    <title>Circus Nocturna</title>
+</head>
+<body>
+   
+<nav>
+    <div class="logo">
+        <h1>Circus Nocturna</h1>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="icon" onclick="DisplayMenu()">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#shows" onclick="closeMenu()">Performances</a>
+        <a href="#plan" onclick="closeMenu()">Plan your visit</a>
+    </div>
+</nav>
+
+<script>
+    function DisplayMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        }
+        else {
+            x.className = "topnav"
+        }
+    }
+
+    function closeMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        }
+        else {
+            x.className = "topnav"
+        }
+    }
+
+
+</script>
+<!--navi loppuu-->
+
+
+<!--top alkaa-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="top">
+    <div class="loading-box">
+        <div class="loading">loading</div>%
+        <div class="counter">100</div>
+    </div>
+
+
+   
+   
+   
+    <!--Teksti-->
+    <center>
+    <div class="title">
+        <h1>Dare to explore?</h1>
+        <div class="subtitle">
+            Circus Nocturna <br>
+            <a href="#about" class="down-arrow">&#x2193;</a>
+        </div>
+    </div>
+</center>
+</div>
+
+<script>
+    $(document).ready(function () {
+     $('.counter').counterUp({
+      delay: 13,
+      time: 1600
+     });
+    });
+</script>
+
+<!--top loppuu-->
+
+
+<!--päivä kaksi-->
+<div class="about" id="about">
+
+    <div class="container2">
+        <h2>Circus Nocturna</h2>
+    
+    <p data-aos="zoom-in-right">It says we appeared out of nowhere—one fog-drenched evening, on the outskirts of a town that’s since disappeared from maps. <br> Circus Nocturna doesn’t follow the rules of time or place. We simply arrive. No one sees the crew build it, yet there we stand by dawn, our towering tents and twisting pathways shrouded in a veil of eerie silence. <br> <br>
+        Our founder, known only as “The Master,” is a figure of legend and whispers. No one knows who—or what—they are. Even us, performers, who are as strange as we are skilled, never have seen The Master. Yet orders are issued, performances arranged, and shadows seem to shift and obey a presence unseen. <br> Some believe The Master walks among the visitors, hidden in plain sight. Rumor has it that they masquerade as one of the lifelike marionettes of the Marionette Ruler, their hollow eyes following you wherever you go. <br> <br>
+        But beware—payment here isn’t always made in coins. Some visitors leave with lighter pockets, others with heavier hearts, and a few… don’t leave at all. After all, it’s not just a circus. It’s an invitation to step beyond the veil and into a world where the line between performer and prey is razor-thin.
+        </p>
+</div>
+</div>
+<div class="shows" id="shows">
+    <div class="container-1">
+        <div class="box1">
+            <h3>The Bone Collector’s Lair</h3>
+    <p>A macabre maze where visitors navigate through tunnels lined with skeletal sculptures, while actors portraying undead creatures stalk the unwary.
+        Dare to enter the Bone Collector’s Lair, and you may leave with a piece of yourself missing.
+    </p>
+    </div>
+    
+    <div class="box2">
+        <h3>Labyrinth of Shadows</h3>
+    <p>A dark maze filled with mirrors and shifting lights, where ominous laughter and whispers guide or mislead participants.
+        Wander the Labyrinth of Shadows, and the exit may not lead back to the world you know. 
+    </p>
+    </div>
+    
+    <div class="box3">
+        <h3>The Carnivorous Carousel</h3>
+    <p>A thrilling ride where the horses have a mind of their own, accompanied by eerie music and unexpected jumpscares.
+        Brave the Carnivorous Carousel, where the horses whisper secrets too terrible to repeat.
+    </p>
+    </div>
+    
+    <div class="box4">
+        <h3>The Marionette Ruler</h3>
+    <p>A creepy puppet show where life-sized marionettes seem to move on their own, blurring the line between inanimate and alive.</p>
+    </div>
+    </div>
+</div>
+
+<center>
+    <div class="info">
+    <p style="font-size: 50px; text-decoration: underline; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(255, 255, 255);;"> Days without accidents</p>
+    <p style="font-size: 50px; color: rgb(111, 5, 5);;">2</p>
+</div>
+
+
+<div class="plan" id="plan">
+    <div class="section">
+        <p>Opening Hours</p>
+        <div class="container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="mb1.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        The Haunted Circus runs on borrowed time—arrive at dusk, leave... if you can 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <p>Tickets</p>
+        <div class="container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="mm1.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        Payment may be made in coin, secrets, or the promise of a dream you can never reclaim.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <p>Adress</p>
+        <div class="container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="cover4.jpg" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        Somewhere between the shadows and the moonlight
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    </div>
+</center>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+    });
+  </script>
+
+  <div class="footer">
+Beware! Circus Noctura is not for the faint of heart. Its attractions are captivating, but they come at a cost. <br>
+The circus is not liable for possessions, disappearances, or mysterious phenomena.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Poiret+One&display=swap');
+
+/*Millä tökin default asetuksia*/
+
+* {
+    font-family: "Mystery Quest", system-ui, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0px;
+    color: antiquewhite;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --gray:rgb(177, 177, 177);
+}
+
+.topnav {
+    float: right;
+}
+
+.topnav a {
+    font-size: 25px;
+    text-decoration: none;
+    display: none;
+}
+
+.topnav a.icon {
+    margin: 30px;
+    float: right;
+    display: block;
+    width: auto;
+}
+
+.dot {
+    font-family: 'pacifico', cursive;
+    background-color: rgb(160, 24, 24);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 1px;
+    float: left;
+    animation: showing 12s;
+}
+
+.topnav.responsive {
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    z-index: +2;
+}
+
+.topnav.responsive a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.topnav.responsive .icon {
+    position: absolute;
+    right: 0px;
+    margin: 10px;
+    display: none;
+}
+
+.topnav.responsive a:hover {
+    font-family: "Mystery Quest", system-ui, cursive;
+    color: var(--gray);
+}
+
+.logo h1 {
+    position: absolute;
+    font-size: 20px;
+    margin: 20px;
+    font-family: "Mystery Quest", system-ui, cursive;
+    font-weight: 400;
+}
+
+.loading-box {
+    margin-top: 350px;
+    width: 10%;
+    position: absolute;
+    margin-left: 45%;
+    text-align: center;
+    font-size: 25px;
+    animation: remove 18s;
+    opacity: 0;
+}
+
+.title {
+    margin-top: 300px;
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.title h1 {
+    font-size: 40px;
+    font-family:"Mystery Quest", system-ui;
+    animation: show 10s;
+    opacity: 1;
+    color:antiquewhite;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    16% {
+        opacity: 0;
+        transform: rotate3d(-285, 85, 30, 90deg);
+    }
+    30% {
+        opacity: 1;
+        transform: rotate3d(-285, 85, 30, 90deg);
+    }
+
+    80% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+.subtitle {
+    font-size: 50px;
+    text-shadow: 0 0 4px black;
+    color: rgb(111, 5, 5);
+    animation: show 17s;
+    opacity: 1;
+}
+
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+        transform: rotate3d(-285, 85, 30, 90deg);
+    }
+    45% {
+        opacity: 1;
+        transform: none;
+    }
+    90% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes remove {
+    0% {
+opacity: 0;
+    }
+
+    1% {
+     opacity: 1;   
+    }
+
+    15% {
+      opacity: 1;  
+    }
+
+    16% {
+      opacity: 0;  
+    }
+}
+
+.down-arrow {
+    color: rgb(111, 5, 5);
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+/*päivä kaksi*/
+
+.top {
+    height: 1000px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(c1.jpg);
+    background-size: cover;
+    animation: showing 15s;
+}
+
+@keyframes showing {
+    0% {
+        height: 1000px;
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0)), url(c1.jpg);
+        background-size: cover;
+    }
+    70% {
+        height: 1000px;
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0)), url(c1.jpg);
+        background-size: cover;  
+    }
+    80% {
+        height: 1000px;
+        background-image: linear-gradient(to bottom, rgb(0, 0,0, 0.562), rgb(0, 0, 0, 0.688)), url(c1.jpg);
+        background-size: cover;   
+    }
+}
+
+.about {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(plan2.jpg);
+    height: 90vh;
+    background-size: cover;
+    padding: 10%;
+}
+
+.container2 {
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    background-color: rgba(19, 9, 9, 0.821);
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.container2 h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.about .container2 p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: aliceblue;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    text-align:center;
+    padding: 10px;
+}
+
+.shows {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(mk1.jpg);
+    height: 900px;
+    background-size: cover; 
+}
+
+.container-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns of equal width */
+    gap: 20px; /* Optional: spacing between boxes */
+    padding: 10vmax;
+    align-items: end;
+    justify-items: end;
+}
+
+.box1 {
+    width: 300px;
+    height: 300px;
+    border: 5px dashed rgb(111, 5, 5);
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.box1 h3 {
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 10%;
+    font-family: "Mystery Quest", system-ui;
+}
+
+.box1 p {
+    color: aliceblue;
+    font-size: 1vmin, 2vmax;
+    margin-top: 10%;
+    text-shadow: 5, 5, 5, 5, black;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+
+.box2 {
+    width: 300px;
+    height: 300px;
+    border: 5px dashed rgb(111, 5, 5);
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.box2 h3 {
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 10%;
+    font-family: "Mystery Quest", system-ui;
+}
+
+.box2 p {
+    color: aliceblue;
+    font-size: 1vmin, 2vmax;
+    margin-top: 10%;
+    text-shadow: 5, 5, 5, 5, black;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+
+.box3 {
+    width: 300px;
+    height: 300px;
+    border: 5px dashed rgb(111, 5, 5);
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.box3 h3 {
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 10%;
+    font-family: "Mystery Quest", system-ui;
+}
+
+.box3 p {
+    color: aliceblue;
+    font-size: 1vmin, 2vmax;
+    margin-top: 10%;
+    text-shadow: 5, 5, 5, 5, black;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+
+.box4 {
+    width: 300px;
+    height: 300px;
+    border: 5px dashed rgb(111, 5, 5);
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.box4 h3 {
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 10%;
+    font-family: "Mystery Quest", system-ui;
+}
+
+.box4 p {
+    color: aliceblue;
+    font-size: 1vmin, 2vmax;
+    margin-top: 10%;
+    text-shadow: 5, 5, 5, 5, black;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+
+.shows span {
+    font-family: 'monoton', cursive;
+    color: rgb(30, 37, 140);
+
+}
+
+
+
+.info p {
+    background-color: black;
+    height: 100px;
+}
+
+.plan .section {
+    height: 370px;
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    cursor: pointer;
+    color: rgb(254, 254, 254);
+    background-color: rgb(0, 0, 0);
+}
+
+.plan .section p {
+    font-size: 25px;
+}
+
+.plan .container {
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+    perspective: 1000px; /* Enable 3D effect */
+}
+
+.flip-card {
+    width: 100%;
+    height: 100%;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-front {
+    background-color: transparent;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: auto;
+}
+
+.flip-card-back {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: rotateY(180deg);
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(10, 10, 10);
+    color: rgb(150, 13, 13);
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+  }
+
+  @media (max-width: 800px) {
+    .container-1 {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .about {
+        padding: 5%; /* Reduce padding on smaller screens */
+    }
+
+    .container2 {
+        width: 90%; /* Expand container width */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .container2 h2 {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    .about .container2 p {
+        font-size: 0.9rem; /* Adjust for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container2 h2 {
+        font-size: 1.2rem; /* Further reduction for very small screens */
+    }
+
+    .about .container2 p {
+        font-size: 0.8rem;
+    }
+}
+
+.shows {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(mk1.jpg);
+    height: auto; /* Change from fixed height to auto for better responsiveness */
+    background-size: cover;
+    padding: 10vmax;
+}
+
+.container-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Default to 2 columns */
+    gap: 20px; /* Spacing between boxes */
+    align-items: right;
+    justify-items: right;
+}
+
+/* Media query for responsive layout */
+@media (max-width: 768px) {
+    .container-1 {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 20px;
+        padding: 5vmax;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 100%; /* Full width on small screens */
+        margin: 0 auto;
+    }
+}
